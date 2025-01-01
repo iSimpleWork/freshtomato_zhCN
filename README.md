@@ -1,0 +1,2 @@
+# freshtomato_zhCN
+freshtomato简体中文汉化油猴插件
