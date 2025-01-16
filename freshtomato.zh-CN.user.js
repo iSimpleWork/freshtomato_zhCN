@@ -1400,8 +1400,8 @@ JoeSimmons : https://userscripts-mirror.org/users/23652
 	// ===============================================================
 	if (TomatoPage == 'advanced-dhcpdns.asp') {
 		Tomato_AdvancedDhcpdns = document.getElementsByClassName('section-title');
-		Tomato_AdvancedDhcpdns[0].innerHTML = 'DHCP / DNS 服务器 (LAN)';
-		Tomato_AdvancedDhcpdns[1].innerHTML = 'DHCP 用户端 (WAN)';
+		Tomato_AdvancedDhcpdns[0].innerHTML =Tomato_AdvancedDhcpdns[0].innerHTML.replace('DHCP / DNS Client (WAN)','DHCP 用户端 (WAN)');
+		Tomato_AdvancedDhcpdns[1].innerHTML = Tomato_AdvancedDhcpdns[1].innerHTML.replace('DHCP / DNS Server (LAN)', 'DHCP / DNS 服务器 (LAN)');
 		
 		var words = {
 			'Use internal DNS' : '使用内建 DNS',
